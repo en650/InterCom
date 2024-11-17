@@ -37,7 +37,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFo
 parser.add_argument("-i", "--input-device", type=int_or_str, help="Input device ID or substring")
 parser.add_argument("-o", "--output-device", type=int_or_str, help="Output device ID or substring")
 parser.add_argument("-d", "--list-devices", action="store_true", help="Print the available audio devices and quit")
-parser.add_argument("-s", "--frames_per_second", type=float, default=44100, help="sampling rate in frames/second")
+parser.add_argument("-s", "--frames_per_second", type=float, default=11025, help="sampling rate in frames/second")
 parser.add_argument("-c", "--frames_per_chunk", type=int, default=1024, help="Number of frames in a chunk")
 parser.add_argument("-l", "--listening_port", type=int, default=4444, help="My listening port")
 parser.add_argument("-a", "--destination_address", type=int_or_str, default="localhost", help="Destination (interlocutor's listening) address")
